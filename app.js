@@ -39,10 +39,10 @@ const ARTICULOS = [
 ];
 const VIDEOS = [{ titulo: "Video 1", reel: "DgDRyQrsnWI" }, { titulo: "Video 2", reel: "DgEH5d8MNZG" }];
 const PODCASTS = [
-  { titulo: "Podcast 1 · Facho", src: "audio/podcast-1-facho.mp3" },
-  { titulo: "Podcast 2 · Patrocinado", src: "audio/podcast-2-patrocinado.mp3" },
-  { titulo: "Podcast 3 · Influencer", src: "audio/podcast-3-influencer.mp3" },
-  { titulo: "Podcast 4 · Miedo", src: "audio/podcast-4-miedo.mp3" }
+  { titulo: "Tus influencers favoritos disfrutan de PhagoSynth", src: "audio/podcast-1-facho.mp3" },
+  { titulo: "Conoce nuestras suscripciones", src: "audio/podcast-2-patrocinado.mp3" },
+  { titulo: "¿Ya probaste nuestra comida virtual?", src: "audio/podcast-3-influencer.mp3" },
+  { titulo: "Aprende a optimizar tu tiempo", src: "audio/podcast-4-miedo.mp3" }
 ];
 /* Frases de la mascota: BORRADOR para aprobación */
 const DIALOGOS = {

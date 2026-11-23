@@ -37,7 +37,7 @@ const ARTICULOS = [
     "Rodrigo Vexler: “Soy muy creyente del karma. Confío que tarde o temprano va a llegar a ella. Todos sus videos están compuestos por datos sacados de contexto, cifras inventadas y pura especulación para asustar a los consumidores. Tengo una responsabilidad con ustedes, y esa es decirles siempre lo que es mejor para ustedes. Hay una verdad absoluta: la comida digital es avanzar hacia el futuro.”",
     "Entrevistadora: “Señor Vexler, le agradezco profundamente concederme esta entrevista y agradezco en boca de toda la humanidad la labor que está realizando. Usted es uno de los mayores genios de nuestra generación y la esperanza a un futuro mejor, a un futuro más digital.”"] }
 ];
-const VIDEOS = [{ titulo: "Video 1", reel: "DgDRyQrsnWI" }, { titulo: "Video 2", reel: "DgEH5d8MNZG" }];
+const VIDEOS = [{ titulo: "Descarga YA PhagoSynth", reel: "DgDRyQrsnWI" }, { titulo: "Vive digital, come digital", reel: "DgEH5d8MNZG" }];
 const PODCASTS = [
   { titulo: "Tus influencers favoritos disfrutan de PhagoSynth", src: "audio/podcast-1-facho.mp3" },
   { titulo: "Conoce nuestras suscripciones", src: "audio/podcast-2-patrocinado.mp3" },

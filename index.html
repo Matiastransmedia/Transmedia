@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PhagoSynth®</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#app">Saltar al contenido</a>
+<header class="top">
+  <a href="#inicio" class="brand"><img src="img/logo.png" alt="" width="44" height="48"><span>PhagoSynth®</span></a>
+  <button id="burger" aria-expanded="false" aria-controls="nav">Menú</button>
+  <nav id="nav" aria-label="Principal">
+    <a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#como-funciona">Cómo funciona</a><a href="#productos">Productos</a><a href="#prensa">Prensa</a><a href="#medios">Medios</a><a href="#comunidad">Comunidad</a>
+  </nav>
+</header>
+
+<main id="app">
+  <section data-view="inicio" class="hero" hidden>
+    <div class="wrap">
+      <h1>Vive digital, come digital.</h1>
+      <p class="lead">Un mundo sin cosechas. Un menú sin fin. Descarga tu próxima comida en menos de 30 segundos, desde cualquier dispositivo.</p>
+      <p><a class="btn" href="#productos">Ver productos</a> <a class="btn alt" href="#como-funciona">Cómo funciona</a></p>
+    </div>
+    <div class="tiles wrap" id="tiles"></div>
+  </section>
+
+  <section data-view="nosotros" hidden><div class="wrap">
+    <h1>Nosotros</h1>
+    <div class="cols">
+      <div><h2>Historia</h2><p>PhagoSynth nació cuando la última cosecha ya era un recuerdo. Después de la crisis climática, la escasez y el desplazamiento de comunidades, el campo pasó a manos de multinacionales y se volvió infraestructura de datos. Alguien tenía que ofrecer una solución, y la descargamos.</p></div>
+      <div><h2>Misión y visión</h2><p><b>Misión:</b> alimentar a toda la población con un servicio simple, rápido y sin residuos: una ración de energía y un perfil nutricional para cada ciudadano.</p><p><b>Visión:</b> un mundo sin cosechas y un menú sin fin, disponible para todos los sistemas operativos.</p></div>
+      <div><h2>Filosofía</h2><p>Si tu vida transcurre en lo digital, ¿por qué seguir comiendo de forma análoga? Creemos que el progreso es el avance de la tecnología y que nadie debería preocuparse por lo que come. Para eso estamos nosotros: nos preocupamos por ti.</p></div>
+      <div><h2>Dirección</h2><p><b>Rodrigo Vexler Roa</b>, CEO y fundador. Un hombre sencillo que huye de los reflectores y que ofrece, según sus palabras, un servicio comunitario.</p><p>Nuestra directora de operaciones y el Equipo de Bienestar Alimentario completan una dirección que siempre sabe qué es lo mejor para ti.</p></div>
+    </div>
+  </div></section>
+
+  <section data-view="como-funciona" hidden><div class="wrap">
+    <h1>Cómo funciona</h1>
+    <p class="lead">La comida ahora se programa. PhagoSynth ofrece un servicio alimenticio descargable directamente en tu organismo: cada ciudadano recibe una ración de energía y un perfil nutricional, y los sabores, texturas y recuerdos culinarios se renderizan en un dispositivo doméstico. Sin cocinas, sin restaurantes, sin residuos.</p>
+    <ol class="steps"><li><b>Elige tu plan.</b> Premium, Meta, Familiar o Gold: tú decides cuánto quieres sentir.</li><li><b>Descarga.</b> Menos de 30 segundos desde chips, gafas, relojes o cualquier dispositivo. Tú das la instrucción de comer desde tu cerebro.</li><li><b>Consume.</b> En medio minuto te sientes satisfecho. Cada plato tiene una licencia, y la licencia tiene un número de consumos.</li></ol>
+  </div></section>
+
+  <section data-view="productos" hidden><div class="wrap">
+    <h1>Productos</h1>
+    <div class="grid" id="productos"></div>
+    <h2>Planes</h2>
+    <div class="grid" id="planes"></div>
+  </div></section>
+
+  <section data-view="prensa" hidden><div class="wrap">
+    <h1>Prensa</h1>
+    <div class="list" id="articulos"></div>
+  </div></section>
+
+  <section data-view="medios" hidden><div class="wrap">
+    <h1>Medios</h1>
+    <h2>Videos</h2><div class="grid" id="videos"></div>
+    <h2>Podcasts</h2><div class="list" id="podcasts"></div>
+  </div></section>
+
+  <section data-view="comunidad" hidden><div class="wrap narrow">
+    <h1>Comunidad</h1>
+    <form id="cform">
+      <label>Nombre <input name="n" maxlength="40" autocomplete="nickname" placeholder="Anónimo"></label>
+      <label>Comentario <textarea name="m" maxlength="400" required rows="3"></textarea></label>
+      <button class="btn" type="submit">Publicar</button>
+    </form>
+    <p id="cstate" role="status"></p>
+    <ul class="comments" id="comentarios"></ul>
+  </div></section>
+</main>
+
+<footer class="foot">
+  <a href="#inicio">Volver al inicio</a>
+  <a href="https://www.instagram.com/phagosynth" target="_blank" rel="noopener">Instagram @phagosynth</a>
+  <span>PhagoSynth® 2050</span>
+</footer>
+
+<div class="mas" id="mas">
+  <p class="bub" id="bub" role="status" aria-live="polite" hidden></p>
+  <button id="masbtn" class="face" aria-label="Mascota guía: otra frase"><img src="img/mascota.png" alt=""></button>
+  <button id="masmute" class="mute" aria-pressed="false">Silenciar</button>
+</div>
+
+<dialog id="dlg"><button id="dclose" class="btn alt" aria-label="Cerrar">Cerrar</button><div id="dbody"></div></dialog>
+<script src="app.js"></script>
+</body>
+</html>
